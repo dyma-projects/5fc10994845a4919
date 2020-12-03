@@ -13,12 +13,11 @@ export class Exerice1Component implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.liaison1 = "Bonjour";
-    this.liaison3 = "Bonjour";
+    this.liaison1 = 'Bonjour';
+    this.liaison3 = 'Bonjour';
   }
 
-  sayBonjour(value: string): void
-  {
+  sayBonjour(value: string): void {
     this.liaison2 = 'Bonjour ' + value;
   }
 }
