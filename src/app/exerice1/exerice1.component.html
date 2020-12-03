@@ -1,0 +1,20 @@
+<h1>Trois types de liaison</h1>
+<ul>
+    <li> 
+        <b>Liaison sur un attribut avec &#91;&#93;</b>
+        <div>
+            <input type="text" [value]="liaison1">
+        </div>
+    </li>
+    <li>
+        <b>Liaison sur un attribut avec {{"\u0028"}}{{"\u0029"}}</b>
+        <div>
+            <input type="text" (input)="sayBonjour($event.target.value)">
+            {{ liaison2 }}
+        </div>
+    </li>
+    <li>
+        <b>Liaison sur un attribut avec {{"\u007B"}}{{"\u007B"}}{{"\u007D"}}{{"\u007D"}}</b>
+        <div>{{ liaison3 }}</div>
+    </li>
+</ul>
